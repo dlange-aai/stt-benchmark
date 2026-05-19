@@ -231,6 +231,7 @@ def create_groq() -> FrameProcessor:
         language=Language.EN,
     )
 
+
 def create_mistral() -> FrameProcessor:
     from pipecat.services.mistral.stt import MistralSTTService
 
@@ -239,6 +240,7 @@ def create_mistral() -> FrameProcessor:
         model="voxtral-mini-transcribe-realtime-2602",
         language=Language.EN,
     )
+
 
 def create_nvidia() -> FrameProcessor:
     from pipecat.services.nvidia.stt import NvidiaSTTService
@@ -343,6 +345,7 @@ def create_whisper() -> FrameProcessor:
         model=Model.DISTIL_MEDIUM_EN,
         language=Language.EN,
     )
+
 
 def create_xai() -> FrameProcessor:
     from pipecat.services.xai.stt import XAISTTService
