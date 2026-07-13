@@ -9,7 +9,7 @@ entry rather than editing the existing one in place — that keeps the old model
 published numbers reproducible and lets the benchmark show the before/after.
 A vendor's first/original entry keeps the bare vendor key (e.g. ``assemblyai``,
 ``cartesia``). Going forward, every NEW model uses a full ``vendor_model`` key
-derived from the model string (e.g. ``assemblyai_universal-3-5-pro`` for model
+derived from the model string (e.g. ``assemblyai_universal_3_5_pro`` for model
 ``universal-3-5-pro``), so the key is unambiguous on its own. Older keys
 (``cartesia_ink2``) are not renamed. Mark the superseded entry
 ``is_current=False``. Full checklist: docs/adding-models.md.
