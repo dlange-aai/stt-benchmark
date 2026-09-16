@@ -167,7 +167,7 @@ def create_assemblyai_universal_3_6_pro() -> FrameProcessor:
             min_turn_silence=50,
             max_turn_silence=50,
             vad_threshold=0.2,
-            prompt="Transcribe this in English.",
+            language_codes=[Language.EN],
         ),
         vad_force_turn_endpoint=True,
     )
